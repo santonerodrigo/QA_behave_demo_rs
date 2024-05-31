@@ -38,7 +38,7 @@ Feature: behave qa demo
 
   Scenario: Alerts
     Given I login to the test page
-    When I type "Stori Card"
+    When I type "QA Card"
     And I click the Alert button
     And I click the Confirm button
     Then I assert the alert is correct
@@ -46,5 +46,5 @@ Feature: behave qa demo
 
   Scenario: table navigation
     Given I login to the test page
-    When I search for 25, and 15 courses
+    When I search for $25, and $15 courses
     Then I print them

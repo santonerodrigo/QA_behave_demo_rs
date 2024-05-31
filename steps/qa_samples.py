@@ -6,10 +6,10 @@ from pages.qa_page import QAPage
 @given('I login to the test page')
 def launch_browser(context):
     options = webdriver.ChromeOptions()
-    mobile_emulation = {
-        "deviceName": "iPhone X"
-    }
-    options.add_experimental_option("mobileEmulation", mobile_emulation)
+    # mobile_emulation = {
+    #     "deviceName": "iPhone X"
+    # }
+    # options.add_experimental_option("mobileEmulation", mobile_emulation)
 
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
     context.driver = webdriver.Chrome(
@@ -93,7 +93,7 @@ def assert_alert(context):
     assert alert_text == "Hello QA Card, Are you sure you want to confirm?"
 
 
-@when('I search for $25, and $15 courses and print them')
+@when('I search for $25, and $15 courses')
 def search_for_courses(context):
     context.page.search_for_courses(15, 25)
 
