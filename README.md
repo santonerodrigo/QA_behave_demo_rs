@@ -22,11 +22,11 @@
     https://www.jetbrains.com/es-es/pycharm/download/
 2. Clone the repository:
    ```sh
-   git clone https://github.com/your_username/your_project.git
+   git clone https://github.com/santonerodrigo/QA_behave_demo_rs.git
    cd your_project
 3. Install requirements:
    ```sh
    pip install -r requirements.txt
-4. Execute tests using pytest command
+4. Execute tests using behave command
     ```sh
-   pytest
+    behave --junit 

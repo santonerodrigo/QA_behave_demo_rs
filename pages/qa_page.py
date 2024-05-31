@@ -124,6 +124,6 @@ class QAPage:
             columns = row.find_elements(By.TAG_NAME, "td")
             td_values = [col.text for col in columns]
             if str(value1) in td_values:
-                print(f"{td_values[0]} {td_values[2]}")
+                print(f"{td_values[0]} {td_values[1]}")
             if str(value2) in td_values:
-                print(f"{td_values[0]} {td_values[2]}")
+                print(f"{td_values[0]} {td_values[1]}")
