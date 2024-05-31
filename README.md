@@ -27,6 +27,6 @@
 3. Install requirements:
    ```sh
    pip install -r requirements.txt
-4. Execute tests using pytest command
+4. Execute tests using behave command
     ```sh
-   pytest
+    behave --junit 
